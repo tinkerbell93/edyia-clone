@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDYIA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/section.css">
+</head>
+ 
+<body>
+    <header class="header">
+        <h1 class="logo reset__margin"><a href="https://edaya.com" target="_blank"><img src="#" alt="EDYIA 로고"></a></h1>
+        <button class="nav__btn--open reset__button" type="button" aria-label="메인 메뉴 열기" title="메인 메뉴 열기"></button>
+        <nav class="nav">
+            <h2 class="a11y__hidden">메인메뉴</h2>
+            <ul class="reset__list">
+                <li><a href="#">메인메뉴명</a></li>
+                <li><a href="#">메인메뉴명</a></li>
+                <li><a href="#">메인메뉴명</a></li>
+                <li><a href="#">메인메뉴명</a></li>
+                <li><a href="#">메인메뉴명</a></li>
+                <li><a href="#">메인메뉴명</a></li>
+            </ul>
+            <button class="nav__btn--close reset__button" type="button" aria-label="메인 메뉴 닫기" title="메인 메뉴 닫기"></button>
+        </nav>
+    </header>
+
+
+
+
+    <main class="main">  
+        <h2 class="a11y__hidden">이디야 메뉴 목록</h2>
+        <ul class="drink__list reset__list"> <!-- 음료메뉴 하나하나를 다 모아둔 집합-->
+            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+                <figure class="reset__margin">
+                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <figcaption>Lorem, ipsum.</figcaption>    
+                </figure>
+                
+                <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
+
+                <section class="drink__detail">
+                    <h3>
+                        ICED 벚꽃라떼
+                        <span lang="en">Cherry Blossom Latte</span>
+                    </h3>
+                    <p>
+                        은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                    </p>
+                    <table class="detail__table--ingre">
+                        <caption class="a11y__hidden">영양성분표</caption>  
+                        <tbody>
+                            <tr>
+                                <th scope="row">칼로리</th>
+                                <td>(393kcal)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">당류</th>
+                                <td>(999kcal)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">칼로리</th>
+                                <td>(999kcal)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">칼로리</th>
+                                <td>(999kcal)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">칼로리</th>
+                                <td>(999kcal)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
+                </section>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="a11y__hidden">
+    </footer>
+</body>
+</html>
