@@ -159,7 +159,11 @@
 }
 
 /* 음료 상세정보 */
+.drink__item.active .drink__detail {
+    display: block;
+}
 .drink__detail {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
