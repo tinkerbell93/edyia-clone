@@ -1,12 +1,23 @@
-.header {
-    background-color: purple;
+
+
+
+
+.drink__list {
+    /* background: rgb(255, 181, 181); */
 }
-.main {
-    background-color: aqua;
+.drink__item {
+    /* background: rgb(232, 197, 255); */
 }
-section {
-    background-color: darkorange;
+/* .drink__detail {
+    display: none;
 }
-li {
-    background-color: darkseagreen;
+.drink__detail.active {
+    display: block;
+} */
+
+.drink__item .drink__detail {
+    display: none;
+}
+.drink__item.active .drink__detail {
+    display: block;
 }

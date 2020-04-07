@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDYIA</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
  
 <body>
     <header class="header">
-        <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank"><img src="#" alt="EDYIA 로고"></a></h1>
-        <button class="nav__btn--open reset__button" type="button" aria-label="메인 메뉴 열기" title="메인 메뉴 열기"></button>
+        <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank"><img src="./images/1X/logo.png" alt="EDYIA 로고"></a></h1>
+        <button type="button" class="nav__btn--open reset__button">메인 메뉴 열기</button>
         <nav class="nav">
             <h2 class="a11y__hidden">메인메뉴</h2>
             <ul class="reset__list">
-                <li><a href="#">메뉴</a></li>
+                <li><a href="#">이디야음료메뉴</a></li> <!-- 메뉴 라고 하기에 너무 .. 전체를 포괄하는 헤딩느낌이어 수정해보았습니다. -->
                 <li><a href="#">이디야멤버스</a></li>
                 <li><a href="#">이디야커피랩</a></li>
                 <li><a href="#">이디야컬쳐랩</a></li>
                 <li><a href="#">공지사항</a></li>
                 <li><a href="#">매장찾기</a></li>
             </ul>
-            <button class="nav__btn--close reset__button" type="button" aria-label="메인 메뉴 닫기" title="메인 메뉴 닫기"></button>
+            <button type="button" class="nav__btn--close reset__button">메인 메뉴 닫기</button>
         </nav>
     </header>
 
@@ -32,46 +32,44 @@
     <main class="main">  
         <h2 class="a11y__hidden">이디야 메뉴 목록</h2>
         <ul class="drink__list reset__list"> <!-- 음료메뉴 하나하나를 다 모아둔 집합-->
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item01 active"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" />
+                    </span>
                     <figcaption>ICED 벚꽃라떼</figcaption>    
                 </figure>
-                
-                <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
+                <!-- 이부분 다시 고려해봐야할듯.. // images hover issue // 위에 스타일 참고 -->
+                <button type="button" class="drink__info reset__button">
+                    클릭하시면 상세정보를 확인할 수 있습니다.
+                </button>
 
-                <section class="drink__detail">
-                    <h3>
+                <section class="drink__detail active">
+                    <h3 class="reset__margin">
                         ICED 벚꽃라떼
                         <span lang="en">Cherry Blossom Latte</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
                     </p>
                     <table class="detail__table--ingre">
                         <caption class="a11y__hidden">영양성분표</caption>  
                         <tbody>
+                            <!-- 1행에 2개의 셀이 오는거라 아래와같이 수정 -->
                             <tr>
                                 <th scope="row">칼로리</th>
                                 <td>(393kcal)</td>
-                            </tr>
-                            <tr>
                                 <th scope="row">포화지방</th>
                                 <td>(18.6g)</td>
-                            </tr>
                             <tr>
                                 <th scope="row">당류</th>
                                 <td>(35g)</td>
-                            </tr>
-                            <tr>
                                 <th scope="row">나트륨</th>
                                 <td>(149mg)</td>
                             </tr>
                             <tr>
                                 <th scope="row">단백질</th>
                                 <td>(7g)</td>
-                            </tr>
-                            <tr>
                                 <th scope="row">카페인</th>
                                 <td>(0mg)</td>
                             </tr>
@@ -80,20 +78,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item02"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/02_Ice_Cherry_Blossom_Latte.png" alt="HOT 벚꽃라떼" />
+                    </span>
                     <figcaption>HOT 벚꽃라떼</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
+                    <h3 class="reset__margin">
                         HOT 벚꽃라떼
                         <span lang="en">Cherry Blossom Latte</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
                     </p>
                     <table class="detail__table--ingre">
@@ -128,20 +128,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item03"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/03_Ice_Brownie_Chocolate.png" alt="ICED 브라우니 쇼콜라" />
+                    </span>
                     <figcaption>ICED 브라우니 쇼콜라</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
+                    <h3 class="reset__margin">
                         ICED 브라우니 쇼콜라
                         <span lang="en">Brownie Chocolate</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료
                     </p>
                     <table class="detail__table--ingre">
@@ -176,20 +178,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item04"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/04_Hot_Brownie_Chocolate.png" alt="HOT 브라우니 쇼콜라" />
+                    </span>
                     <figcaption>HOT 브라우니 쇼콜라</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
+                    <h3 class="reset__margin">
                         HOT 브라우니 쇼콜라
                         <span lang="en">Brownie Chocolate</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료
                     </p>
                     <table class="detail__table--ingre">
@@ -224,20 +228,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item05"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
-                    <figcaption>제주청귤 오리지널</figcaption>    
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/05_Jeju_Green_Tangerine_Tea.png" alt="제주청귤 오리지널" />
+                    </span>
+                    <figcaption>제주청귤 오리지널</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
-                        제주청귤 오리지널
+                    <h3 class="reset__margin">
+                        제주청귤 오리지널
                         <span lang="en">Jeju Green Tangerine Tea</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         청정 제주지역에서 자라난 귀한 청귤의 풍부한 과육을 맛볼 수 있는 새콤달콤한 홈메이드 스타일 과일차
                     </p>
                     <table class="detail__table--ingre">
@@ -272,20 +278,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item06"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/06-Jeju_Green_Tangerine_Blossom.png" alt="제주청귤 블라썸" />
+                    </span>
                     <figcaption>제주청귤 블라썸</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
+                    <h3 class="reset__margin">
                         제주청귤 블라썸
                         <span lang="en">Jeju Green Tangerine Blossom</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         청귤의 새콤함이 복숭아, 포도 등의 다양한 과일향과 함께 어우러져 밸런스가 훌륭한 블렌딩티
                     </p>
                     <table class="detail__table--ingre">
@@ -320,20 +328,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item07"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/07_Pomegranate_Tea.png" alt="석류 오리지널" />
+                    </span>
                     <figcaption>석류 오리지널</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
+                    <h3 class="reset__margin">
                         석류 오리지널
                         <span lang="en">Pomegranate Tea</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         석류 특유의 산뜻한 향과 깔끔한 뒷맛이 느껴지며, 과육이 한알 한알 살아있는 붉은 빛의 매력적인 과일차
                     </p>
                     <table class="detail__table--ingre">
@@ -368,20 +378,22 @@
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
-            <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
+            <li class="drink__item drink__item08"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
-                    <img src="https://t1.daumcdn.net/cfile/tistory/99E1C4405BAA67762B" alt="룰루" />
+                    <span class="drink__image--container">
+                        <img src="./images/1X/drink/08_Pomegranate_Apple_Lime.png" alt="석류 애플라임" />
+                    </span>
                     <figcaption>석류 애플라임</figcaption>    
                 </figure>
                 
                 <a href="#" class="drink__info" role="button" aria-label="클릭하시면 상세정보를 확인할 수 있습니다." title="클릭하시면 상세정보를 확인할 수 있습니다."></a>
 
                 <section class="drink__detail">
-                    <h3>
+                    <h3 class="reset__margin">
                         석류 애플라임
                         <span lang="en">Pomegranate Apple Lime</span>
                     </h3>
-                    <p>
+                    <p class="reset__margin">
                         산뜻한 석류에 다양한 과일과 꽃, 그리고 샴페인의 향이 더해져 보다 깊고 중후한 맛이 느껴지는 블렌딩티
                     </p>
                     <table class="detail__table--ingre">
