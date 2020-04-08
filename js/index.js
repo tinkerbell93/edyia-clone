@@ -31,3 +31,12 @@ drinkList.forEach(function (v){
 
 
 
+// 네비게이션 포커스아웃 이슈
+$('nav').keydown(function (e) {    
+    if (e.which == 9) { // tab
+        if ($('.nav__btn--close').is(':focus')) {
+            $(this).parent().find('li:first-child a').focus();
+            e.preventDefault();
+        }
+    }
+});

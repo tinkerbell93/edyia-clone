@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- ie유저는 edge가있을경우 edge로 열릴 수 있게-->
+    <meta name="description" content="이디야의 다양한 정보와 유용한 콘텐츠를 만나보세요.">
     <title>EDYIA</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -11,10 +13,22 @@
 </head>
  
 <body>
+    <!-- skip navigation -->
+    <div class="skip__nav" aria-label="스킵 네비게이션">
+        <ul class="reset__list">
+            <li><a href="#nav__btn--open">메인메뉴 바로가기</a></li>
+            <li><a href="#main">본문 바로가기</a></li>
+        </ul>
+    </div>
+    <!-- // skip navigation -->
+    <!-- header -->
     <header class="header">
+        <!-- logo -->
         <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank"><img src="./images/logo.svg" alt="EDYIA 로고"></a></h1>
-        <button type="button" class="nav__btn--open reset__button">메인 메뉴 열기</button>
-        <nav class="nav">
+        <!-- // logo -->
+        <button type="button" id="nav__btn--open" class="nav__btn--open reset__button">메인 메뉴 열기</button>
+        <!-- navigation -->
+        <nav id="nav" class="nav">
             <h2 class="a11y__hidden">메인메뉴</h2>
             <ul class="reset__list">
                 <li><a href="#">이디야음료메뉴</a></li> <!-- 메뉴 라고 하기에 너무 .. 전체를 포괄하는 헤딩느낌이어 수정해보았습니다. -->
@@ -26,16 +40,18 @@
             </ul>
             <button type="button" class="nav__btn--close reset__button">메인 메뉴 닫기</button>
         </nav>
+        <!-- // navigation -->
     </header>
+    <!-- // header -->
 
-
-    <main class="main">  
+    <!-- main -->
+    <main id="main" class="main">  
         <h2 class="a11y__hidden">이디야 메뉴 목록</h2>
+        <!-- 이디야 음료 리스트 -->
         <ul class="drink__list reset__list"> <!-- 음료메뉴 하나하나를 다 모아둔 집합-->
             <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png 1x,
                                      ./images/2X/drink/01_Ice_Cherry_Blossom_Latte.png 2x" 
                              alt="ICED 벚꽃라떼" 
@@ -43,7 +59,6 @@
                     </span>
                     <figcaption>ICED 벚꽃라떼</figcaption>    
                 </figure>
-                <!-- 이부분 다시 고려해봐야할듯.. // images hover issue // 위에 스타일 참고 -->
                 <button type="button" class="drink__info reset__button">
                     클릭하시면 상세정보를 확인할 수 있습니다.
                 </button>
@@ -85,7 +100,6 @@
             <li class="drink__item drink__item02"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/02_Hot_Cherry_Blossom_Latte.png 1x,
                                      ./images/2X/drink/02_Hot_Cherry_Blossom_Latte.png 2x" 
                              alt="HOT 벚꽃라떼" 
@@ -135,7 +149,6 @@
             <li class="drink__item drink__item03"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/03_Ice_Brownie_Chocolate.png 1x,
                                      ./images/2X/drink/03_Ice_Brownie_Chocolate.png 2x" 
                              alt="ICED 브라우니 쇼콜라" 
@@ -185,7 +198,6 @@
             <li class="drink__item drink__item04"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/04_Hot_Brownie_Chocolate.png 1x,
                                      ./images/2X/drink/04_Hot_Brownie_Chocolate.png 2x" 
                              alt="HOT 브라우니 쇼콜라" 
@@ -235,7 +247,6 @@
             <li class="drink__item drink__item05"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/05_Jeju_Green_Tangerine_Tea.png 1x,
                                      ./images/2X/drink/05_Jeju_Green_Tangerine_Tea.png 2x" 
                              alt="제주청귤 오리지널" 
@@ -285,7 +296,6 @@
             <li class="drink__item drink__item06"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/06-Jeju_Green_Tangerine_Blossom.png 1x,
                                      ./images/2X/drink/06-Jeju_Green_Tangerine_Blossom.png 2x" 
                              alt="제주청귤 블라썸" 
@@ -335,7 +345,6 @@
             <li class="drink__item drink__item07"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/07_Pomegranate_Tea.png 1x,
                                      ./images/2X/drink/07_Pomegranate_Tea.png 2x" 
                              alt="석류 오리지널" 
@@ -385,7 +394,6 @@
             <li class="drink__item drink__item08"> <!-- 음료 1개당 li 하나 -->
                 <figure class="reset__margin">
                     <span class="drink__image--container">
-                        <!-- <img src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png" alt="ICED 벚꽃라떼" /> -->
                         <img srcset="./images/1X/drink/08_Pomegranate_Apple_Lime.png 1x,
                                      ./images/2X/drink/08_Pomegranate_Apple_Lime.png 2x" 
                              alt="석류 애플라임" 
@@ -433,7 +441,9 @@
                 </section>
             </li>
         </ul>
+        <!-- // 이디야 음료 리스트 -->
     </main>
+    <!-- // main -->
 
     <footer class="footer">
         <small class="copyright">
