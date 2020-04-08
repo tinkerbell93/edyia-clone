@@ -1,5 +1,7 @@
 /* Styling Layout */
-
+body {
+    min-width: 320px; /* 0407추가 */
+}
 /* //// Header //// */
 .header {
     display: flex;
@@ -99,12 +101,13 @@
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 95px 15px;
+    box-sizing: border-box;
 }
 .drink__item {
     position: relative;
     width: calc(50% - 28px);
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 10px 10px 3rem 10px; 
     background: #f5f5f5;
 }
 .drink__item01 {
@@ -259,10 +262,13 @@
 
 @media screen and (max-width: 560px) {
     .drink__list {
+        width: 100%;
         flex-flow: column wrap;
+
     }
     .drink__item {
         width: 100%;
+        box-sizing: border-box; /* 0407 :: li 모바일크기에서 가로스크롤 생기는 이슈 수정 */
     }
 }
 
