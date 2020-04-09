@@ -57,6 +57,7 @@
                              alt="ICED 벚꽃라떼" 
                              src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png">
                              <!-- 2번 읽히는 단점이 있으나, 이미지가 로딩되지 않았을때를 고려하여 ALT값을 줌-->
+                             <!-- 2번 읽히는 단점을 고려하여 alt값을 음료 이미지 라는 텍스트로 변경할까 고민하였지만 개발 단계에서 이미지가 로딩이 안되었을때 파악하기 어려울 것이라는 것이 예상되어 figcaption과 같은 텍스트를 넣음 -->
                     </span>
                     <figcaption>ICED 벚꽃라떼</figcaption>    
                 </figure>
@@ -69,7 +70,7 @@
                         ICED 벚꽃라떼
                         <span lang="en">Cherry Blossom Latte</span>
                     </h3>
-                    <div class="a11y__test" tabindex="0"> <!-- 상세정보를 읽어주기 위해 tabindex 추가 / h3는 위에서 충분히 정보를 제공했다고 판단하여 따로 빼어 div로 묶어줌 -->
+                    <div tabindex="0"> <!-- 상세정보를 읽어주기 위해 tabindex 추가 / h3는 위에서 충분히 정보를 제공했다고 판단하여 따로 빼어 div로 묶어줌 -->
                         <p class="reset__margin">
                             은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
                         </p>
@@ -101,7 +102,7 @@
                 </section>
             </li>
             <li class="drink__item drink__item02"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/02_Hot_Cherry_Blossom_Latte.png 1x,
                                      ./images/2X/drink/02_Hot_Cherry_Blossom_Latte.png 2x" 
@@ -120,37 +121,39 @@
                         HOT 벚꽃라떼
                         <span lang="en">Cherry Blossom Latte</span>
                     </h3>
-                    <p class="reset__margin">
-                        은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(430kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(19.0g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(38g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(190mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(10g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(430kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(19.0g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(38g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(190mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(10g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(0mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
             <li class="drink__item drink__item03"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/03_Ice_Brownie_Chocolate.png 1x,
                                      ./images/2X/drink/03_Ice_Brownie_Chocolate.png 2x" 
@@ -169,37 +172,39 @@
                         ICED 브라우니 쇼콜라
                         <span lang="en">Brownie Chocolate</span>
                     </h3>
-                    <p class="reset__margin">
-                        깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(503kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(20.8g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(42g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(262mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(9g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(12mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(503kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(20.8g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(42g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(262mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(9g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(12mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
             <li class="drink__item drink__item04"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/04_Hot_Brownie_Chocolate.png 1x,
                                      ./images/2X/drink/04_Hot_Brownie_Chocolate.png 2x" 
@@ -218,37 +223,39 @@
                         HOT 브라우니 쇼콜라
                         <span lang="en">Brownie Chocolate</span>
                     </h3>
-                    <p class="reset__margin">
-                        깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(503kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(20.9g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(42g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(299mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(9g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(12mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(503kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(20.9g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(42g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(299mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(9g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(12mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
             <li class="drink__item drink__item05"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/05_Jeju_Green_Tangerine_Tea.png 1x,
                                      ./images/2X/drink/05_Jeju_Green_Tangerine_Tea.png 2x" 
@@ -267,37 +274,39 @@
                         제주청귤 오리지널
                         <span lang="en">Jeju Green Tangerine Tea</span>
                     </h3>
-                    <p class="reset__margin">
-                        청정 제주지역에서 자라난 귀한 청귤의 풍부한 과육을 맛볼 수 있는 새콤달콤한 홈메이드 스타일 과일차
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(218kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(51g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(4mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(0g))</td>
-                                <th scope="row">카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            청정 제주지역에서 자라난 귀한 청귤의 풍부한 과육을 맛볼 수 있는 새콤달콤한 홈메이드 스타일 과일차
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(218kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(0.1g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(51g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(4mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(0g))</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(0mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
             <li class="drink__item drink__item06"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/06-Jeju_Green_Tangerine_Blossom.png 1x,
                                      ./images/2X/drink/06-Jeju_Green_Tangerine_Blossom.png 2x" 
@@ -316,37 +325,39 @@
                         제주청귤 블라썸
                         <span lang="en">Jeju Green Tangerine Blossom</span>
                     </h3>
-                    <p class="reset__margin">
-                        청귤의 새콤함이 복숭아, 포도 등의 다양한 과일향과 함께 어우러져 밸런스가 훌륭한 블렌딩티
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(202kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(46g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(5mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(1g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            청귤의 새콤함이 복숭아, 포도 등의 다양한 과일향과 함께 어우러져 밸런스가 훌륭한 블렌딩티
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(202kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(0.1g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(46g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(5mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(1g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(0mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
             <li class="drink__item drink__item07"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/07_Pomegranate_Tea.png 1x,
                                      ./images/2X/drink/07_Pomegranate_Tea.png 2x" 
@@ -365,37 +376,39 @@
                         석류 오리지널
                         <span lang="en">Pomegranate Tea</span>
                     </h3>
-                    <p class="reset__margin">
-                        석류 특유의 산뜻한 향과 깔끔한 뒷맛이 느껴지며, 과육이 한알 한알 살아있는 붉은 빛의 매력적인 과일차
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(210kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(42g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(5mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(0g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            석류 특유의 산뜻한 향과 깔끔한 뒷맛이 느껴지며, 과육이 한알 한알 살아있는 붉은 빛의 매력적인 과일차
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(210kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(0.1g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(42g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(5mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(0g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(0mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
             <li class="drink__item drink__item08"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0">
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/08_Pomegranate_Apple_Lime.png 1x,
                                      ./images/2X/drink/08_Pomegranate_Apple_Lime.png 2x" 
@@ -414,32 +427,34 @@
                         석류 애플라임
                         <span lang="en">Pomegranate Apple Lime</span>
                     </h3>
-                    <p class="reset__margin">
-                        산뜻한 석류에 다양한 과일과 꽃, 그리고 샴페인의 향이 더해져 보다 깊고 중후한 맛이 느껴지는 블렌딩티
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(220kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(42g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(7mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(1g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div tabindex="0">
+                        <p class="reset__margin">
+                            산뜻한 석류에 다양한 과일과 꽃, 그리고 샴페인의 향이 더해져 보다 깊고 중후한 맛이 느껴지는 블렌딩티
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(220kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(0.1g)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(42g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(7mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(1g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(0mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
