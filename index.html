@@ -24,7 +24,7 @@
     <!-- header -->
     <header class="header">
         <!-- logo -->
-        <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank"><img src="./images/logo.svg" alt="EDYIA 로고"></a></h1>
+        <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank"><img src="./images/logo.svg" alt="이디야 홈페이지 입니다."></a></h1>
         <!-- // logo -->
         <button type="button" id="nav__btn--open" class="nav__btn--open reset__button">메인 메뉴 열기</button>
         <!-- navigation -->
@@ -50,12 +50,13 @@
         <!-- 이디야 음료 리스트 -->
         <ul class="drink__list reset__list"> <!-- 음료메뉴 하나하나를 다 모아둔 집합-->
             <li class="drink__item drink__item01"> <!-- 음료 1개당 li 하나 -->
-                <figure class="reset__margin">
+                <figure class="reset__margin" tabindex="0"> 
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png 1x,
                                      ./images/2X/drink/01_Ice_Cherry_Blossom_Latte.png 2x" 
                              alt="ICED 벚꽃라떼" 
                              src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png">
+                             <!-- 2번 읽히는 단점이 있으나, 이미지가 로딩되지 않았을때를 고려하여 ALT값을 줌-->
                     </span>
                     <figcaption>ICED 벚꽃라떼</figcaption>    
                 </figure>
@@ -68,32 +69,34 @@
                         ICED 벚꽃라떼
                         <span lang="en">Cherry Blossom Latte</span>
                     </h3>
-                    <p class="reset__margin">
-                        은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
-                    </p>
-                    <table class="detail__table--ingre">
-                        <caption class="a11y__hidden">영양성분표</caption>  
-                        <tbody>
-                            <!-- 1행에 2개의 셀이 오는거라 아래와같이 수정 -->
-                            <tr>
-                                <th scope="row">칼로리</th>
-                                <td>(393kcal)</td>
-                                <th scope="row">포화지방</th>
-                                <td>(18.6g)</td>
-                            <tr>
-                                <th scope="row">당류</th>
-                                <td>(35g)</td>
-                                <th scope="row">나트륨</th>
-                                <td>(149mg)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">단백질</th>
-                                <td>(7g)</td>
-                                <th scope="row">카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="a11y__test" tabindex="0"> <!-- 상세정보를 읽어주기 위해 tabindex 추가 / h3는 위에서 충분히 정보를 제공했다고 판단하여 따로 빼어 div로 묶어줌 -->
+                        <p class="reset__margin">
+                            은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                        </p>
+                        <table class="detail__table--ingre">
+                            <caption class="a11y__hidden">영양성분표</caption>  
+                            <tbody>
+                                <!-- 1행에 2개의 셀이 오는거라 아래와같이 수정 -->
+                                <tr>
+                                    <th scope="row">칼로리</th>
+                                    <td>(393kcal)</td>
+                                    <th scope="row">포화지방</th>
+                                    <td>(18.6g)</td>
+                                <tr>
+                                    <th scope="row">당류</th>
+                                    <td>(35g)</td>
+                                    <th scope="row">나트륨</th>
+                                    <td>(149mg)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단백질</th>
+                                    <td>(7g)</td>
+                                    <th scope="row">카페인</th>
+                                    <td>(0mg)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <button class="detail__btn--close reset__button" type="button" aria-label="상세정보 닫기" title="상세정보 닫기"></button>
                 </section>
             </li>
