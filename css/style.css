@@ -153,7 +153,13 @@
     padding: 5px 0px;
     font-size: 1.3rem;
     background: #f8f8f8;
-    /* f8f8f8 */
+
+    /* display: block;
+    table-layout: fixed;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box; */
+  
 }
 /* 음료 영양성분 테이블 가운데 구분선 */
 .drink__detail.active::after {
@@ -207,3 +213,4 @@
         box-sizing: border-box; /* 0407 :: li 모바일크기에서 가로스크롤 생기는 이슈 수정 */
     }
 }
+

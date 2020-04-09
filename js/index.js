@@ -33,10 +33,23 @@ drinkList.forEach(function (v){
 
 // 네비게이션 포커스아웃 이슈
 $('nav').keydown(function (e) {    
-    if (e.which == 9) { // tab
+    e = e || window.event;
+    var code = e.which || e.keyCode;
+
+    if (e.which == 9 || code == 13) { // tab
         if ($('.nav__btn--close').is(':focus')) {
             $(this).parent().find('li:first-child a').focus();
             e.preventDefault();
+            console.log('aa');
         }
+        console.log('dd');
     }
 });
+
+// 사파리
+var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (is_safari) {
+    $('.detail__table--ingre').css({
+        'width': 'calc(100% + 40px)'
+    });
+}
