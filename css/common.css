@@ -72,9 +72,9 @@ body {
     padding: 30px;
 }
 .nav__btn--open {
-    position: absolute; /* ie11 이슈 : 75~77 추가*/
+    position: absolute; /* ie11 이슈 : 75~77줄 추가*/
     top: 0;
-    right: 20px; 
+    right: 30px; 
     overflow: hidden;
     width: 80px;
     height: 80px;
