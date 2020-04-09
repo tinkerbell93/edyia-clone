@@ -15,11 +15,13 @@ navBtnClose.addEventListener('click', function() {
 
 // 메인 콘텐츠 영역
 const drinkList = document.querySelectorAll('.drink__list li');
+const drinkListArray = [].slice.call(drinkList);
 
-drinkList.forEach(function (v){
+drinkListArray.forEach(function (v){
     // 맨 처음 눌렀을 때
     v.querySelector('.drink__info').addEventListener('click', function() {
-        v.classList.add('active')
+        v.classList.add('active');
+        console.log('asd');
     });
 
     // 메뉴클릭시 상세정보에 뜨는 닫기버튼
