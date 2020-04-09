@@ -31,6 +31,7 @@ html {
     font-size: 10px;
 }
 body {
+    min-width: 320px; /* 0407추가 */
     font-family: "Spoqa Han Sans", sans-serif;
     font-size: 1.6rem;
 }
@@ -43,9 +44,6 @@ a {
     background-color: #31287C;
 } 
 
-body {
-    min-width: 320px; /* 0407추가 */
-}
 /* header */
 .header {
     /* display: flex;
