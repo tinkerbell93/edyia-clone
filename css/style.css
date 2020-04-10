@@ -87,12 +87,10 @@
 
 /* 음료 상세정보 */
 .drink__item.active .drink__detail {
-    /* display: block; */
-    visibility: visible;
+    display: block;
 }
 .drink__detail {
-    /* display: none; */
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -161,17 +159,6 @@
     box-sizing: border-box; */
   
 }
-/* 음료 영양성분 테이블 가운데 구분선 */
-.drink__detail.active::after {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 1px;
-    height: 100%;
-    background: #000;
-}
 /* 한 행에 2셀을 넣겐단 의미에서 마크업 수정 */
 .detail__table--ingre th {
     width: 25%;
@@ -181,6 +168,8 @@
 .detail__table--ingre td {
     width: 25%;
 }
+/* 테이블에서 가운데 구분선을 위해 가운선을 위해 가상요소를 
+선택 하였고 포지션으로 띄어 중앙선을 구분하였습니다. */
 .detail__table--ingre tbody::after { 
     content: "";
     position: absolute;
