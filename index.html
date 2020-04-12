@@ -12,21 +12,6 @@
     <script src="./js/jquery.min.js" defer></script>
     <script src="./js/index.js" defer></script>
 </head>
- <!-- 
-     발표 : 크로스브라우징은 ie10 / firefox / safari / chrome에서 테스트 완료했습니다.
-     (사진 4개 띄울까요?)
-     
-     크로스브라우징 이슈로 ie 이용자는 edge로 열리게 메타태그 추가 
-     SEO를 고려하여 description추가
-     
-     홈페이지 로딩되었을 때, 헤더가 내려오고 로고와 메뉴버튼은 옆에서 나오고
-     콘텐츠 영역에 메뉴 4개가 순서대로 딜레이 타임을 가지고 나올 수 있게 
-     작업하였습니다.
-     
-     로딩되었을때 순차적으로 나오는 애니메이션의 위치값은
-     css에 transform translate속성을 이용하여 제어하였기 때문에
-     리플로우 되는 현상을 없게 하였습니다.
--->
 <body>
     <!-- skip navigation -->
     <div class="skip__nav" aria-label="스킵 네비게이션">
@@ -35,47 +20,23 @@
             <li><a href="#main">본문 바로가기</a></li>
         </ul>
     </div>
-    <!-- 
-        발표 : 접근성을 고려하여 바로 원하는 메뉴로 이동할 수 있게 스킵네비게이션을 추가
-        사실 콘텐츠가 많이없어서 뺄까 고려해보았으나 
-        접근성 관측에서 다른 페이지들을 분석해보았을때 위와같이 네비게이션을 제공하는 페이지를 몇몇 발견하여
-        저희 프로젝트에도 적용해보았고, 다같이 공유드리고 싶어 추가해보았습니다.
-     -->
     <!-- // skip navigation -->
     <!-- header -->
     <header class="header">
         <!-- logo -->
         <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank" title="이디야 메인페이지로 이동" aria-label="이디야 메인페이지로 이동"><img src="./images/logo.svg" alt="이디야 홈페이지 입니다."></a></h1>
-        <!-- 
-            발표 :  h1에 로고를 넣고, a태그를 눌렀을때 메인페이지로 이동되는게
-            대부분의 웹페이지에서 적용되는 사례입니다.
-            그런데 h1 에 타이틀 레이블을 넣어서 메인페이지 이동하는걸 왜 안알려주는지 의문이 생겼습니다.
-            대부분의 웹페이지가 그렇기 떄문에 암묵적으로 label이나 title을 사용하여 메인페이지로 가는것을 명시를 안해도 되는것일까요?
-            그래서 넣었습니다.
-         -->
         <!-- // logo -->
         <button type="button" id="nav__btn--open" class="nav__btn--open reset__button">메인 메뉴 열기</button>
         <!-- navigation -->
         <nav id="nav" class="nav">
             <h2 class="a11y__hidden">메인메뉴</h2>
             <ul class="reset__list">
-                <li><a href="#" tabindex="0">이디야음료메뉴</a></li> <!-- 메뉴 라고 하기에 너무 .. 전체를 포괄하는 헤딩느낌이어 수정해보았습니다. -->
+                <li><a href="#" tabindex="0">이디야음료메뉴</a></li> 
                 <li><a href="#" tabindex="0">이디야멤버스</a></li>
                 <li><a href="#" tabindex="0">이디야커피랩</a></li>
                 <li><a href="#" tabindex="0">이디야컬쳐랩</a></li>
                 <li><a href="#" tabindex="0">공지사항</a></li>
                 <li><a href="#" tabindex="0">매장찾기</a></li>
-                <!-- 
-                    발표 : 메뉴를 클릭시, 탭키를 눌렀을 때 마지막메뉴 다음 버튼으로 포커스가 간 후, 탭키를 눌렀을 때
-                    밖에 메인태그로 벗어나는 이슈가 있어서 해당부분을 제이쿼리를 사용하여 버튼으로 포커스가 가고 탭키를 눌렀을때
-                    다시 첫번째 메뉴로 가게끔 코드를 추가했습니다.
-                    파이어폭스에서는 메뉴에 포커스가 안가는 이슈가 있어서 li에 tabindex를 추가해서 포커스를 받을 수 있게 추가해주었습니다.
-
-                    제이쿼리로 메뉴를 제어 할 때, transition이 안먹는 이슈가 있었는데
-                    nav에 active라는 클래스명이 있을 때 display: block / 없을 때 none처리를 해서 문제가 되었던 점을
-                    css에 visibility: visible / hidden 속성을 이용하여 active클래스명이 없을때도 접근성트리에 노출되지 않게 함으로
-                    구조상 / 시각상으로 문제없이 해결하였습니다.
-                 -->
             </ul>
             <button type="button" class="nav__btn--close reset__button">메인 메뉴 닫기</button>
         </nav>
@@ -95,11 +56,6 @@
                                      ./images/2X/drink/01_Ice_Cherry_Blossom_Latte.png 2x" 
                              alt="ICED 벚꽃라떼" 
                              src="./images/1X/drink/01_Ice_Cherry_Blossom_Latte.png">
-                             <!-- 
-                                 발표 : dpi가 1배율 데스크탑일때와 2배율 모바일디바이스일때를 고려하여 img srcset를 사용하였습니다.
-                            -->
-                             <!-- 2번 읽히는 단점이 있으나, 이미지가 로딩되지 않았을때를 고려하여 ALT값을 줌-->
-                             <!-- 2번 읽히는 단점을 고려하여 alt값을 음료 이미지 라는 텍스트로 변경할까 고민하였지만 개발 단계에서 이미지가 로딩이 안되었을때 파악하기 어려울 것이라는 것이 예상되어 figcaption과 같은 텍스트를 넣음 -->
                     </span>
                     <figcaption>ICED 벚꽃라떼</figcaption>    
                 </figure>
@@ -119,7 +75,6 @@
                         <table class="detail__table--ingre">
                             <caption class="a11y__hidden">영양성분표</caption>  
                             <tbody>
-                                <!-- 1행에 2개의 셀이 오는거라 아래와같이 수정 -->
                                 <tr>
                                     <th scope="row">칼로리</th>
                                     <td>(393kcal)</td>
