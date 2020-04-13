@@ -72,7 +72,7 @@ a {
 .nav__btn--open {
     position: absolute; /* ie11 이슈 : 75~77줄 추가*/
     top: 0;
-    right: 30px; 
+    right: 0; 
     overflow: hidden;
     width: 80px;
     height: 80px;
