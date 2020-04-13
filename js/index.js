@@ -49,9 +49,9 @@ $('nav').keydown(function (e) {
 });
 
 // 사파리 테이블 이슈
-var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-if (is_safari) {
-    $('.detail__table--ingre').css({
-        'width': 'calc(100% + 40px)'
-    });
-}
+// var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+// if (is_safari) {
+//     $('.detail__table--ingre').css({
+//         'width': 'calc(100% + 40px)'
+//     });
+// }

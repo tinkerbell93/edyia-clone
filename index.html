@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <!-- ie유저는 edge가있을경우 edge로 열릴 수 있게-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- SEO 고려하여 추가 -->
     <meta name="description" content="이디야의 다양한 정보와 유용한 콘텐츠를 만나보세요.">
     <title>EDYIA</title>
     <link rel="stylesheet" href="./css/common.css">
@@ -14,6 +15,7 @@
 </head>
 <body>
     <!-- skip navigation -->
+    <!-- 웹 접근성 고려하여 tab key 사용시 이용가능 -->
     <div class="skip__nav" aria-label="스킵 네비게이션">
         <ul class="reset__list">
             <li><a href="#nav__btn--open">메인메뉴 바로가기</a></li>
@@ -21,7 +23,9 @@
         </ul>
     </div>
     <!-- // skip navigation -->
+    
     <!-- header -->
+    <!-- 홈페이지 로딩되었을 때, -->
     <header class="header">
         <!-- logo -->
         <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank" title="이디야 메인페이지로 이동" aria-label="이디야 메인페이지로 이동"><img src="./images/logo.svg" alt="이디야 홈페이지 입니다."></a></h1>
