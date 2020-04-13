@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <!-- ie유저는 edge가있을경우 edge로 열릴 수 있게-->
     <meta name="description" content="이디야의 다양한 정보와 유용한 콘텐츠를 만나보세요.">
     <title>EDYIA</title>
@@ -45,12 +45,13 @@
     <!-- header -->
     <header class="header">
         <!-- logo -->
-        <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank"><img src="./images/logo.svg" alt="이디야 홈페이지 입니다."></a></h1>
+        <h1 class="logo reset__margin"><a href="https://ediya.com" target="_blank" title="이디야 메인페이지로 이동" aria-label="이디야 메인페이지로 이동"><img src="./images/logo.svg" alt="이디야 홈페이지 입니다."></a></h1>
         <!-- 
             발표 :  h1에 로고를 넣고, a태그를 눌렀을때 메인페이지로 이동되는게
             대부분의 웹페이지에서 적용되는 사례입니다.
             그런데 h1 에 타이틀 레이블을 넣어서 메인페이지 이동하는걸 왜 안알려주는지 의문이 생겼습니다.
             대부분의 웹페이지가 그렇기 떄문에 암묵적으로 label이나 title을 사용하여 메인페이지로 가는것을 명시를 안해도 되는것일까요?
+            그래서 넣었습니다.
          -->
         <!-- // logo -->
         <button type="button" id="nav__btn--open" class="nav__btn--open reset__button">메인 메뉴 열기</button>
@@ -58,12 +59,12 @@
         <nav id="nav" class="nav">
             <h2 class="a11y__hidden">메인메뉴</h2>
             <ul class="reset__list">
-                <li tabindex="0"><a href="#">이디야음료메뉴</a></li> <!-- 메뉴 라고 하기에 너무 .. 전체를 포괄하는 헤딩느낌이어 수정해보았습니다. -->
-                <li tabindex="0"><a href="#">이디야멤버스</a></li>
-                <li tabindex="0"><a href="#">이디야커피랩</a></li>
-                <li tabindex="0"><a href="#">이디야컬쳐랩</a></li>
-                <li tabindex="0"><a href="#">공지사항</a></li>
-                <li tabindex="0"><a href="#">매장찾기</a></li>
+                <li><a href="#" tabindex="0">이디야음료메뉴</a></li> <!-- 메뉴 라고 하기에 너무 .. 전체를 포괄하는 헤딩느낌이어 수정해보았습니다. -->
+                <li><a href="#" tabindex="0">이디야멤버스</a></li>
+                <li><a href="#" tabindex="0">이디야커피랩</a></li>
+                <li><a href="#" tabindex="0">이디야컬쳐랩</a></li>
+                <li><a href="#" tabindex="0">공지사항</a></li>
+                <li><a href="#" tabindex="0">매장찾기</a></li>
                 <!-- 
                     발표 : 메뉴를 클릭시, 탭키를 눌렀을 때 마지막메뉴 다음 버튼으로 포커스가 간 후, 탭키를 눌렀을 때
                     밖에 메인태그로 벗어나는 이슈가 있어서 해당부분을 제이쿼리를 사용하여 버튼으로 포커스가 가고 탭키를 눌렀을때
@@ -300,10 +301,10 @@
                     <span class="drink__image--container">
                         <img srcset="./images/1X/drink/05_Jeju_Green_Tangerine_Tea.png 1x,
                                      ./images/2X/drink/05_Jeju_Green_Tangerine_Tea.png 2x" 
-                             alt="제주청귤 오리지널" 
+                             alt="제주청귤 오리지널" 
                              src="./images/1X/drink/05_Jeju_Green_Tangerine_Tea.png">
                     </span>
-                    <figcaption>제주청귤 오리지널</figcaption>    
+                    <figcaption>제주청귤 오리지널</figcaption>    
                 </figure>
                 
                 <button type="button" class="drink__info reset__button">
@@ -312,7 +313,7 @@
 
                 <section class="drink__detail">
                     <h3 class="reset__margin">
-                        제주청귤 오리지널
+                        제주청귤 오리지널
                         <span lang="en">Jeju Green Tangerine Tea</span>
                     </h3>
                     <div tabindex="0">
@@ -354,7 +355,7 @@
                              alt="제주청귤 블라썸" 
                              src="./images/1X/drink/06-Jeju_Green_Tangerine_Blossom.png">
                     </span>
-                    <figcaption>제주청귤 블라썸</figcaption>    
+                    <figcaption>제주청귤 블라썸</figcaption>    
                 </figure>
                 
                 <button type="button" class="drink__info reset__button">
@@ -363,7 +364,7 @@
 
                 <section class="drink__detail">
                     <h3 class="reset__margin">
-                        제주청귤 블라썸
+                        제주청귤 블라썸
                         <span lang="en">Jeju Green Tangerine Blossom</span>
                     </h3>
                     <div tabindex="0">
@@ -504,7 +505,7 @@
     </main>
     <!-- // main -->
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <small class="copyright">
             &copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHT RESERVED.
         </small>
