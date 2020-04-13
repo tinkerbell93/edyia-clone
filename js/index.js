@@ -21,13 +21,14 @@ drinkListArray.forEach(function (v){
     // 맨 처음 눌렀을 때
     v.querySelector('.drink__info').addEventListener('click', function() {
         v.classList.add('active');
-        console.log('asd');
+        v.querySelector('button').setAttribute('aria-pressed', 'true');
     });
 
     // 메뉴클릭시 상세정보에 뜨는 닫기버튼
     const detailBtnClose = v.querySelector('.detail__btn--close');  
     detailBtnClose.addEventListener('click', function() {
         v.classList.remove('active');
+        v.querySelector('button').setAttribute('aria-pressed', 'false');
     });
 });
 
