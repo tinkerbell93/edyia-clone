@@ -1,6 +1,6 @@
-# FirstProjectEdiya
+# First Project Ediya
 
-HTML5, CSS3와 간단 JS를 사용한 이디야 프로젝트
+시맨틱 마크업과 SEO, 웹접근성, 크로스브라우징을 고려한 첫번째 이디야 프로젝트
 
 ## Skils
 
@@ -47,11 +47,11 @@ HTML5, CSS3와 간단 JS를 사용한 이디야 프로젝트
 
 ## learned
 
-aria-haspopup
-aria-pressed
-meta property - open graph
-cross browsing safari error
-role="dialog"
+- aria-haspopup
+- aria-pressed
+- meta property - open graph
+- cross browsing safari error
+- role="dialog"
 
 ## members
 
