@@ -2,7 +2,7 @@
 
 시맨틱 마크업과 SEO, 웹접근성, 크로스브라우징을 고려한 첫번째 이디야 프로젝트
 
-#### :house: [DEMO](https://tinkerbell93.github.io/edyia-clone/)
+#### :house: [DEMO](https://tinkerbell93.github.io/edyia-clone/ "이디야 데모" target="\_blank")
 
 ## Skils
 
