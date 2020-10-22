@@ -39,13 +39,14 @@
 
 ### SEO
 
-- ```html
-  <meta
-    name="description"
-    content="이디야의 다양한 정보와 유용한 콘텐츠를 만나보세요."
-  />
-  ```
-  웹페이지 내의 상세정보를 설명하는 `meta`태그로서 구글봇에 검색되기 용이하다.
+```html
+<meta
+  name="description"
+  content="이디야의 다양한 정보와 유용한 콘텐츠를 만나보세요."
+/>
+```
+
+웹페이지 내의 상세정보를 설명하는 `meta`태그로서 구글봇에 검색되기 용이하다.
 
 ## learned
 
@@ -57,9 +58,9 @@
 
 ## members
 
-박민지 : [qkralswl307@gmail.com](mailto:qkralswl307@gmail.com) <br/>
-김가현 : [hhjj105@gmail.com](hhjj105@gmail.com)<br/>
-유지용 : [jxr208@gmail.com](mailto:jxr208@gmail.com)
+- 박민지 : [qkralswl307@gmail.com](mailto:qkralswl307@gmail.com)
+- 김가현 : [hhjj105@gmail.com](hhjj105@gmail.com)
+- 유지용 : [jxr208@gmail.com](mailto:jxr208@gmail.com)
 
 ## project development period
 
