@@ -93,6 +93,7 @@ a {
 
 /* navigation */
 .nav {
+  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
@@ -102,7 +103,6 @@ a {
   transform: translateX(110%);
   transition: all 0.3s;
   background-color: rgba(20, 24, 44, 0.9);
-  visibility: hidden;
 }
 .nav.active {
   visibility: visible;
