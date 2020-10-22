@@ -1,6 +1,6 @@
 # First Project Ediya Clone
 
-시맨틱 마크업과 SEO, 웹접근성, 크로스브라우징을 고려한 첫번째 이디야 프로젝트
+시맨틱 마크업과 SEO, 웹접근성, 크로스브라우징을 고려한 첫번째 반응형 이디야 프로젝트
 
 #### :house: [DEMO](https://tinkerbell93.github.io/edyia-clone/)
 
