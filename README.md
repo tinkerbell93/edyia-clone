@@ -2,6 +2,8 @@
 
 시맨틱 마크업과 SEO, 웹접근성, 크로스브라우징을 고려한 첫번째 이디야 프로젝트
 
+#### :house: [DEMO](https://tinkerbell93.github.io/fc__teamProject01/)
+
 ## Skils
 
 ### HTML5
@@ -55,8 +57,8 @@
 
 ## members
 
-박민지 : [qkralswl307@gmail.com](mailto:qkralswl307@gmail.com)
-김가현 : [hhjj105@gmail.com](hhjj105@gmail.com)
+박민지 : [qkralswl307@gmail.com](mailto:qkralswl307@gmail.com) <br/>
+김가현 : [hhjj105@gmail.com](hhjj105@gmail.com)<br/>
 유지용 : [jxr208@gmail.com](mailto:jxr208@gmail.com)
 
 ## project development period
