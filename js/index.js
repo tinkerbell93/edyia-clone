@@ -4,12 +4,12 @@ const navBtnClose = document.querySelector('.nav__btn--close'); // 햄버거 닫
 const nav = document.querySelector('.nav'); // 네비게이션
 
 
-navBtnOpen.addEventListener('click', function() {
+navBtnOpen.addEventListener('click', function () {
     nav.classList.add('active');
 });
 
 
-navBtnClose.addEventListener('click', function() {
+navBtnClose.addEventListener('click', function () {
     nav.classList.remove('active');
 });
 
@@ -17,16 +17,16 @@ navBtnClose.addEventListener('click', function() {
 const drinkList = document.querySelectorAll('.drink__list li');
 const drinkListArray = [].slice.call(drinkList);
 
-drinkListArray.forEach(function (v){
+drinkListArray.forEach(function (v) {
     // 맨 처음 눌렀을 때
-    v.querySelector('.drink__info').addEventListener('click', function() {
+    v.querySelector('.drink__info').addEventListener('click', function () {
         v.classList.add('active');
         v.querySelector('button').setAttribute('aria-pressed', 'true');
     });
 
     // 메뉴클릭시 상세정보에 뜨는 닫기버튼
-    const detailBtnClose = v.querySelector('.detail__btn--close');  
-    detailBtnClose.addEventListener('click', function() {
+    const detailBtnClose = v.querySelector('.detail__btn--close');
+    detailBtnClose.addEventListener('click', function () {
         v.classList.remove('active');
         v.querySelector('button').setAttribute('aria-pressed', 'false');
     });
@@ -35,17 +35,13 @@ drinkListArray.forEach(function (v){
 
 
 // 네비게이션 포커스아웃 이슈
-$('nav').keydown(function (e) {    
-    e = e || window.event;
-    var code = e.which || e.keyCode;
+$('nav').keydown(function (e) {
 
-    if (e.which == 9 || code == 13) { // tab
+    if (e.which == 9) { // tab
         if ($('.nav__btn--close').is(':focus')) {
             $(this).parent().find('li:first-child a').focus();
             e.preventDefault();
-            console.log('aa');
         }
-        console.log('dd');
     }
 });
 
